@@ -13,25 +13,37 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Tecnología en Criollo
+subtitle: Version 0.1
+name: Jere Baez Carballo
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
+  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor y sencillez. 
+  Y algo de comentario social. Porque las herramientas son para transformar realidades, y las comparto con la esperanza de
+  que sean usadas a conciencia para busqueda del bien común y un futuro sustentable para los herederos de la tierra."
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+github_username: jeremiasbaezcarballo
+minimal_mistakes_skin: mint
+url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
+locale: "es_AR"
 search: true
+teaser: /assets/images/site/tec-default-teaser-500x300.png
+logo: /assets/images/site/tec-logo-88x88.png
+masthead_tittle: "Tecnología.. En Criollo!"
+show_date: true
+show_author: true
+read_time: true
+words_per_minute: 250
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "America/Argentina/Cordoba" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -56,11 +68,12 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "Jere Baez Carballo"
+  avatar: https://avatars.githubusercontent.com/u/105991550?v=4
+  bio: ""
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -105,7 +118,14 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: False
+  # _courses
+  - scope:
+      path: "_courses"
+      type: courses
+    values:
+      layout: single
+      author_profile: False
 
 category_archive:
   type: liquid
@@ -113,3 +133,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development # disable compression in dev environment
