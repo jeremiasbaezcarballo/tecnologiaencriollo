@@ -30,7 +30,7 @@
      inkscape:export-bgcolor="#ffffffff"
      inkscape:zoom="0.9612704"
      inkscape:cx="400.51166"
-     inkscape:cy="137.83843"
+     inkscape:cy="402.07209"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -50,7 +50,10 @@
        height="123.89282"
        x="2.5256281"
        y="5.2337914"
-       ry="1.3112767" />
+       ry="1.3112767"
+       inkscape:export-filename="../../../../../../tec-default-teaser-2-500x300.png"
+       inkscape:export-xdpi="61.504772"
+       inkscape:export-ydpi="61.504772" />
     <rect
        style="fill:#808080;stroke-width:0.8001;stroke-linejoin:round;paint-order:stroke fill markers"
        id="rect2"
@@ -89,8 +92,8 @@
     <circle
        style="fill:#d72d49;fill-opacity:0.769048;stroke:none;stroke-width:0.245919;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="path8"
-       cx="-170.62148"
-       cy="-64.951042"
+       cx="-171.48592"
+       cy="-40.782307"
        r="7.0728259"
        transform="matrix(0,-1,-1,0,0,0)"
        inkscape:export-filename="./tec-logo-88x88.png"
@@ -121,13 +124,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.48586px;font-family:'TeX Gyre Cursor';-inkscape-font-specification:'TeX Gyre Cursor';text-align:center;letter-spacing:0px;text-anchor:middle;fill:#204ea7;fill-opacity:0.769048;stroke:none;stroke-width:1.92435;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       x="64.984985"
-       y="171.19719"
+       x="40.81625"
+       y="172.06163"
        id="text11"><tspan
          sodipodi:role="line"
          id="tspan11"
          style="font-weight:bold;letter-spacing:0px;stroke-width:1.92435"
-         x="64.984985"
-         y="171.19719">TE</tspan></text>
+         x="40.81625"
+         y="172.06163">TE</tspan></text>
   </g>
 </svg>
