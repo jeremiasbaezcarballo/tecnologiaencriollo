@@ -19,13 +19,11 @@ name: Jere Baez Carballo
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
-  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor y sencillez. 
-  Y algo de comentario social. Porque las herramientas son para transformar realidades, y las comparto con la esperanza de
-  que sean usadas a conciencia para busqueda del bien común y un futuro sustentable para los herederos de la tierra."
-twitter_username: username
+  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor y sencillez!"
 github_username: jeremiasbaezcarballo
-minimal_mistakes_skin: mint
+minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
+baseurl: "/blog"
 locale: "es_AR"
 search: true
 teaser: /assets/images/site/tec-default-teaser-500x300.png
@@ -47,6 +45,7 @@ timezone: "America/Argentina/Cordoba" # https://en.wikipedia.org/wiki/List_of_tz
 
 include:
   - _pages
+  - _courses
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -75,6 +74,8 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-remote-theme
+
+github: [metadata]
 
 author:
   name: "Jere Baez Carballo"

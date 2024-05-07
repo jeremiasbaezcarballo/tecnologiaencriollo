@@ -1,0 +1,14 @@
+Jere:
+  name: "Jeremias Baez Carballo"
+  avatar: https://avatars.githubusercontent.com/u/105991550?v=4
+  bio: "Comparto las cosas interesantes que me voy cruzando. Creo en la educación y la tecnología como herramientas de cambio. Porque las herramientas son para transformar realidades, y las comparto con la esperanza de que sean usadas a conciencia para búsqueda del bien común y un futuro sustentable para los herederos de la tierra. Peeero, que lo solemne no tape el importante deber de pasarla lo mejor posible durante la misión, y con buena compañía."
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:jeremiasbaezcarballo@gmail.com"
+    - label: "Blog personal"
+      icon: "fas fa-fw fa-link"
+      url: "https://jerebaez.ar/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jerebaez/"
