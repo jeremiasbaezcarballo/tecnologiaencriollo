@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
-baseurl: "/blog"
+baseurl: ""
 locale: "es_AR"
 search: true
 teaser: /assets/images/site/tec-default-teaser-500x300.png
