@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
-layout: categories
-permalink: /sistemas/
+title: "Cursos y coso"
+layout: splash
+permalink: /cursos/
 author_profile: true
 ---

@@ -24,7 +24,7 @@ github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
 baseurl: ""
-locale: "es_AR"
+locale: "es-ES"
 search: true
 teaser: /assets/images/site/tec-default-teaser-500x300.png
 logo: /assets/images/site/tec-logo-88x88.png
