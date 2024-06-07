@@ -12,11 +12,11 @@ tags:
 
 # Desarrollo en Linux dentro de Windows apto principiantes: WSL
 
-Despues de una vida teniendo que trabajar en windows y linux usando diferentes estrategias para manejar los distintos sistemas operativos (maquinas virtuales, dual boot, contenedores) les traigo la que llegó para vencer todas las estrategias anteriores para levantar un ambiente rápido y sobre todo fácil: Windows Subsystem for Linux.
+Después de una vida teniendo que trabajar en windows y linux usando diferentes estrategias para manejar los distintos sistemas operativos (maquinas virtuales, dual boot, contenedores) hoy les traigo la que llegó para vencer todas las estrategias anteriores para levantar un ambiente rápido y sobre todo fácil: Windows Subsystem for Linux.
 
 Esto te va a ser útil si:
 - Necesitas levantar un ambiente de desarrollo compatible con linux desde windows rápidamente y con buena performance.
-- Queres aprender a usar linux pero no te animas a instalar todo a mano en tu máquina.
+- Querés aprender a usar linux pero no te animas a instalar todo a mano en tu máquina.
 
 ## Un poco de historia
 
