@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Introducción a Git ~APB~ ATP - Control de versiones en criollo "
+title: "Control de versiones con Git en criollo: Tutorial ATP y APB"
 last_modified_at: 2024-05-29T20:20:02-03:00
 categories:
   - Blog
@@ -28,6 +28,7 @@ Bah sin tantos conflictos, las personas seguimos estando involucradas en el proc
 
 La idea de este artículo es mostrar como funciona, para que se usa y finalmente cerrar con un ejemplo para implementar paso a paso, ya sea para proyectos personales o desarrollo colaborativo. 
 
+![El mapa de como funciona Git!](/assets/images/posts/2024-06-06-git_flujo_de_trabajo.png)
 
 ## Git y Github
 
@@ -35,18 +36,23 @@ La idea de este artículo es mostrar como funciona, para que se usa y finalmente
 
 Es un programa para automatizar el control de versiones. Visualmente, yo puedo tener mi copia local del proyecto, probar modificaciones en paralelo, moverlas a la version cuando creemos que el trabajo este listo y finalmente subir esos cambios a la principal que está en un servidor remoto (Puede ser Github o Gitlab). Ese repositorio remoto es donde se juntan todos los cambios de los colaboradores involucrados.
 
-Las características clave de Git incluyen:
-
-1. Arquitectura distribuida
-2. Capacidades de branching (abrir una rama del proyecto principal para probar cambios) y merging (actualizar una rama con cambios de otra rama)
-3. Repositorios locales y/o remotos
-4. Historial de commits ("fotos" del proyecto en un estado dado) y versionado (numero de versiones)
-
 ### ¿Que es Github?
 
-Github es una plataforma de desarrollo de software online. Ahi se puede tener una copia de nuestro repositorio en nuestra cuenta, es un backup remoto. En conjunto con Git, nos permite tener el repositorio central accesible por internet, publico o privado, que se puede compartir con colaboradores para darles acceso de lectura para los privados, o acceso de edición a colaboradores (que se identifican con su propia cuenta) para poder editar y hacer modificaciones en el repositorio online.
+[Github](https://github.com/) es una plataforma de desarrollo de software online. Ahi se puede tener una copia de nuestro repositorio en nuestra cuenta, es un backup remoto. 
+
+En conjunto con Git, nos permite tener el repositorio central accesible por internet, publico o privado, que se puede compartir con colaboradores para darles acceso de lectura para los privados, o acceso de edición a colaboradores (que se identifican con su propia cuenta) para poder editar y hacer modificaciones en el repositorio online.
 
 Con tu repositorio local, podes hacer lo que quieras una vez esta clonado. 
+
+### ¿Donde se guardan los archivos?
+
+Un proyecto no es mas que un conjunto de archivos con información con distintas extensiones que definen como se ejecutan o que contienen. 
+
+El directorio (o carpeta) que contiene todos los archivos del proyecto con el que interactuamos vive localmente en nuestra maquina. Ahi podemos usar versionado local para tener las distintas fotos del proyecto y sus archivos en distintos momentos. Lo que git guarda en sus carpetas es el historial de cambios. 
+
+Ese historial luego se sincroniza cuando queremos interactuar con el repositorio remoto subiendo cambios, que es compartido entre los miembros de un equipo de trabajo. 
+
+A su vez de este remoto podemos crear copias locales de otros branches, y traernos los ultimos cambios que hayan subido nuestros compañeros en los branches que trabajamos en conjunto. 
 
 ### Flujo de Trabajo de Git para Desarrollo
 
@@ -63,9 +69,6 @@ Para comenzar un nuevo proyecto o trabajar en uno existente se puede hacerlo:
    - Usá el comando `git clone` para copiar un repositorio remoto a tu máquina local
 
 Cuando uno clona, lo que hace es justamente clonar el repositorio remoto a un nuevo repositorio local para trabajar sobre ese código.
-
-![El mapa de como funciona Git!](/assets/images/posts/2024-06-06-git_flujo_de_trabajo.png)
-
 
 #### Haciendo Cambios y Commiteando
 
@@ -95,6 +98,14 @@ Un repositorio de Git es una colección de archivos y su historial de revisiones
 
 1. Repositorio local: Existe en tu máquina
 2. Repositorio remoto: Alojado en un servidor (por ejemplo, GitHub, GitLab, Bitbucket)
+
+No a todos los archivos git los tiene en cuenta para esto. Los estados del archivo pueden ser:
+
+   - **No Rastreado - _untracked_**: Archivos nuevos agregados al proyecto que Git aún no está vigilando.
+   - **Preparado - _added_**: Archivos que están marcados para ser incluidos en el próximo commit. Preparas los cambios usando el comando `git add`.
+   - **Cometido - _commited_**: Cambios que han sido registrados en el historial del repositorio. Cometes cambios usando el comando `git commit`.
+   - **Ignorados - _ignored_**: Archivos que git va a ignorar para el control de versiones. Por ejemplo, archivos de claves para conexión y acceso a recursos, archivos demasiado grandes, configuraciones locales o archivos auxiliares que se crean localmente durante el desarrollo. Estos se detallan en un archivo oculto en la raiz del proyecto llamado .Gitignore.
+
 
 #### Commits
 
@@ -320,7 +331,11 @@ Antes de comenzar, asegurate de tener:
 2. Hacé clic en el botón "Fork" en la esquina superior derecha de la página.
 3. GitHub creará una copia del repositorio bajo tu cuenta.
 
+Para esta parte del tutorial podes usar este [repositorio de ejemplo](https://github.com/jeremiasbaezcarballo/git-en-criollo-tutorial) en mi cuenta.
+
 ### Paso 2: Clonar Tu Repositorio Forkeado
+
+En este momento, vos hiciste un fork que seria una copia de un repositorio propia dentro de tu cuenta. Todo lo que modifiques ahi, es exclusivamente tuyo. Ahora vamos a ver como es el flujo de trabajo normal para este caso de uso. Asi se hace para trabajar en el desarrollo de software libre abierto colaborativo normalmente.
 
 1. En la página de GitHub de tu repositorio forkeado, hacé clic en el botón "Code" y copiá la URL HTTPS.
 2. Abrí tu terminal y navegá al directorio donde querés clonar el repositorio.
@@ -413,7 +428,7 @@ git merge nombre-rama-feature
 git push origin main
 ```
 
-### Paso 9: Crear un Pull Request
+### Paso 9: Crear un Pull Request para el repo de otro
 
 Para contribuir tus cambios de vuelta al repositorio original:
 
