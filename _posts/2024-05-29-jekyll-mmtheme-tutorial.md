@@ -208,5 +208,5 @@ Pero por el momento, con lo que hay hasta acá ya debieras poder usarlo, explora
 
 Fuentes:
 
-- [Jekyll](https://learn.microsoft.com/es-es/windows/wsl/)
-- [Minimal mistakes theme](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
+- [Jekyll](https://jekyllrb.com/)
+- [Minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/)
