@@ -2,8 +2,9 @@
 title: "Linux dentro de Windows con WSL!"
 last_modified_at: 2024-05-28T20:20:02-03:00
 categories:
-  - Blog
+  - General
 tags:
+  - Tutoriales Herramientas
   - principiantes
   - windows
   - ambiente de desarrollo
@@ -39,8 +40,46 @@ Despues de haber probado todas esas opciones, no tengo dudas que hoy por hoy, es
 
 ## Y esto como funciona?
 
+```mermaid!
+graph TD
+    A[Sistema Operativo Windows] -->|Inicia| B[WSL]
+    B -->|Crea| C[Espacio de Usuario Linux]
+    B -->|Inicializa| D[Kernel WSL]
+    D -->|Traduce Llamadas al Sistema| E[Kernel de Windows]
+    C -->|Hace Llamadas al Sistema| D
+    E -->|Maneja Acceso al Hardware| F[Hardware de la Computadora]
+    B -->|Gestiona| G[Traducción del Sistema de Archivos]
+    G -->|Traduce Rutas| H[Sistema de Archivos Windows]
+    G -->|Traduce Rutas| I[Sistema de Archivos Linux]
+    J[Aplicaciones Windows] -->|Pueden Interactuar Con| C
+    C -->|Puede Acceder| H
+    A -->|Ejecuta| J
+```
+
+@startmermaid
+pie title Pets adopted by volunteers
+  "Dogs" : 386
+  "Cats" : 85
+  "Rats" : 35
+@endmermaid
 
 
+<pre class="mermaid">
+graph TD
+    A[Sistema Operativo Windows] -->|Inicia| B[WSL]
+    B -->|Crea| C[Espacio de Usuario Linux]
+    B -->|Inicializa| D[Kernel WSL]
+    D -->|Traduce Llamadas al Sistema| E[Kernel de Windows]
+    C -->|Hace Llamadas al Sistema| D
+    E -->|Maneja Acceso al Hardware| F[Hardware de la Computadora]
+    B -->|Gestiona| G[Traducción del Sistema de Archivos]
+    G -->|Traduce Rutas| H[Sistema de Archivos Windows]
+    G -->|Traduce Rutas| I[Sistema de Archivos Linux]
+    J[Aplicaciones Windows] -->|Pueden Interactuar Con| C
+    C -->|Puede Acceder| H
+    A -->|Ejecuta| J
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 ## Y esto como se instala?
 

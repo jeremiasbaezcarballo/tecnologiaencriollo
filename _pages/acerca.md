@@ -3,6 +3,17 @@ permalink: /acerca/
 title: "Acerca de TEC"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Tecnología en Criollo surge con la idea de compartir públicamente la info de tecnología que voy recopilando que me parezca interesante, las herramientas que uso diariamente y sostener una especie de "diario de campo" con herramientas técnicas, seguimientos de proyectos en casa y algún que otro curso que haya armado. 
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Todo conocimiento que te sirva, sos libre de llevarlo con la única obligación de usarlo para el bien, mejorar tus condiciones propias de vida y la de la gente que te rodea. 
+
+Al fin y al cabo, no deja de ser solo un voto de honor que ni siquiera está incluido en la licencia del sitio ni del código que puedo llegar a compartir, pero es importante cumplirlo. Que no los vaya a encontrar echando moco con algo salido de acá...
+
+---
+
+# Organización del sitio
+
+
+
+
+

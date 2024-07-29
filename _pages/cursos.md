@@ -1,6 +1,8 @@
 ---
-title: "Cursos y coso"
+title: "Cursos"
 layout: splash
 permalink: /cursos/
 author_profile: true
 ---
+
+En camino! :D

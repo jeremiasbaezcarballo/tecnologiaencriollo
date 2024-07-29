@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Tecnología en Criollo
-subtitle: Version 0.0.1
+subtitle: Version 0.0.2
 name: Jere Baez Carballo
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
-  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor y sencillez!"
+  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor!"
 github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
@@ -74,6 +74,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-spaceship
 
 github: [metadata]
 

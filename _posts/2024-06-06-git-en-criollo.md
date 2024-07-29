@@ -3,9 +3,9 @@ layout: single
 title: "Control de versiones con Git en criollo: Tutorial ATP y APB"
 last_modified_at: 2024-05-29T20:20:02-03:00
 categories:
-  - Blog
-  - Git
+  - General
 tags:
+  - Tutoriales Herramientas
   - Git
   - GitHub
   - Control de Versiones
@@ -285,8 +285,11 @@ git config user.email "tu.email@ejemplo.com"
    gh pr merge
    ```
 
+TODO: Revisar proceso y metodologia de revision de pull request y review
+
 Es común para las primeras veces que rompamos el codigo en una rama, o combinemos mal las versiones, o un merge de código da conflictos y nos abatatemos para resolverlo mientras estamos aprendiendo. Cuando el local esta roto, puede surgir la tentación de clonar todo de cero nuevamente, soy culpable de hacerlo. Pero, hoy por hoy si te pasa, te recomiendo antes usar un asistente de IA, explicando el contexto del repositorio, el problema y finalmente el error que nos esta dando la terminal o VSCode. Y despues le decis que queres hacer y que te pase los comandos para hacerlo.
 {: .notice--info}
+
 
 ### Parte 2: Usando Visual Studio Code
 
@@ -294,7 +297,7 @@ Ahora, vamos a pasar por el mismo proceso usando Visual Studio Code con la vista
 
 1. Abrí Visual Studio Code y navegá a la vista "Control de código fuente" (Ctrl+Shift+G).
 
-2. Hacé clic en "Clonar repositorio" e ingresá la URL de tu repositorio de GitHub.
+2. Dependiendo de si tenes VSCode abierto Hacé clic en "Clonar repositorio" e ingresá la URL de tu repositorio de GitHub.
 
 3. Una vez clonado, podés hacer cambios en tus archivos directamente en VSCode.
 
