@@ -19,7 +19,7 @@ name: Jere Baez Carballo
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
-  Proyectos de fin de semana, artículos, tutoriales, cursos y algo mas. Con un toque de humor!"
+  Proyectos de fin de semana, artículos, tutoriales, cursos y algo más."
 github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
@@ -28,7 +28,7 @@ locale: "es-ES"
 search: true
 teaser: /assets/images/site/tec-default-teaser-500x300.png
 logo: /assets/images/site/tec-logo-88x88.png
-masthead_tittle: "Tecnología.. En Criollo!"
+masthead_tittle: "Tecnología... en criollo!"
 show_date: true
 show_author: true
 read_time: true
@@ -91,7 +91,7 @@ author:
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/jeremiasbaezcarballo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"

@@ -7,32 +7,32 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/site/tec-default-teaser-500x300.png
   actions:
-    - label: "Arrancá aca!"
+    - label: "Arrancá acá!"
       url: "/cursos/"
 
-excerpt: "Noticias tecnológicas, tuturiales y cursos traducidos desde las mas sofisticadas y actualizadas fuentes técnicas y científicas al castellano argento y cordobés básico con el que uno charla en el día a día."
+excerpt: "Noticias tecnológicas, tutoriales y cursos adaptados de las fuentes más avanzadas y actualizadas, traducidos al castellano argento y cordobés básico. Nuestro objetivo es brindar información técnica de manera clara y accesible, manteniendo un enfoque cercano y comprensible para todos."
 intro: 
-  - excerpt: 'Explicamos, informamos y difundimos sobre la tecnología, sus aplicaciones, beneficios, desafíos y riesgos. También compartimos herramientas, tutoriales de programación, proyectos y cursos abiertos. Ya seas principiante, adepto o experto en estos temas, algo de lo que hay por acá te tiene que servir!'
+  - excerpt: 'Explicamos, informamos y difundimos sobre tecnología, aplicaciones, beneficios, desafíos y riesgos. También compartimos herramientas, tutoriales de programación, proyectos y cursos abiertos. Ya seas principiante, adepto o experto en estos temas, algo de lo que hay por acá te tiene que servir!'
 feature_row:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "conocedor"
-    title: "Conocedor - Uso bastante la compu.."
-    excerpt: "Ahh! Así que sabes usar una compu y te interesan las noticias de tecnología? TE Cuento como viene la cosa y te paso algunas herramientas básicas que te pueden servir.. Pasa por acá!"
+    title: "Conocedor - Uso bastante la compu"
+    excerpt: "Ahh! ¿Así que sabes usar una compu y te interesan las noticias de tecnología? Te cuento cómo viene la cosa y te paso algunas herramientas básicas que te pueden servir... pasá por acá"
     url: "categorias/#general"
     btn_label: "Vamo nomá!"
     btn_class: "btn--primary"
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "placeholder image 2"
-    title: "Principiante - Ya se programar.."
-    excerpt: "Mortal! Ya seguramente has instalado algun que otro sistema operativo, sabes de los misteriosos medios de comunicación con la PC a través de la terminal.. Bueno, acá hay info de esas cosas.."
+    title: "Principiante - Ya sé programar"
+    excerpt: "Mortal! Ya seguramente has instalado algún que otro sistema operativo y sabes de los misteriosos medios de comunicación con la PC a través de la terminal... bueno, acá hay info de esas cosas"
     url: "categorias/#intermedio"
-    btn_label: "Mas tutoriales"
+    btn_label: "Más tutoriales"
     btn_class: "btn--primary"
   - image_path: /assets/images/raw-posts/rect1.png
-    title: "Avanzado - Ya laburo de esto loco.."
-    excerpt: "Bien ahi che! Te felicito, seguramente andes buscando algo mas picante.. Bueno acá hay algunos proyectitos, análisis técnicos más detallados y noticias científicas mas ñoñas.. Críticas bienvenidas! :)"
+    title: "Avanzado - Ya laburo de esto"
+    excerpt: "Bien ahi che! Te felicito, seguro andas buscando algo más picante. Bueno acá hay algunos proyectitos, análisis técnicos más detallados y noticias científicas más ñoñas. Toda crítica constructiva es bien recibida :)"
     url: "categorias/#avanzado"
-    btn_label: "A ver che.."
+    btn_label: "A ver che"
     btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/images/raw-posts/rect1.png
