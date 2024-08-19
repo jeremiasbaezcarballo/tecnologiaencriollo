@@ -65,11 +65,11 @@ Para versiones de Windows nuevas, el setup es bastante directo. Usando la [docum
 
 1. Abrir PowerShell y ejecutar wsl --install
 
-<img src="https://learn.microsoft.com/es-es/windows/wsl/media/wsl-install.png" />
+![WSL1](/assets/images/posts/WSL1.png)
 
 2. Abrir Ubuntu. Poner un nombre de usuario y contraseña para el sistema operativo Linux. Si es tu compu del día a día no hace falta algo tan complejo, sobre todo la password. 
 
-<img src="https://learn.microsoft.com/es-es/windows/wsl/media/ubuntuinstall.png" />
+![WSL2](/assets/images/posts/WSL2.png)
 
 En teoría esos pasos nos dejan con la máquina corriendo dentro de nuestro Windows. Estamos listos para usarlo.
 
@@ -79,7 +79,7 @@ En teoría esos pasos nos dejan con la máquina corriendo dentro de nuestro Wind
 
 Desde PowerShell, ahora podemos abrir una nueva pestaña en la cual seleccionamos el sistema operativo al que queremos acceder. 
 
-<img src="https://learn.microsoft.com/es-es/windows/wsl/media/terminal.png" />
+![WSL3](/assets/images/posts/WSL3.png)
 
 En una terminal ejecutamos programas, el equivalente al doble click en un ícono desde la interfaz visual. Es una interfaz puramente escrita de un nivel más bajo. Dentro de PowerShell se ejecutan programas de Windows dentro de Windows, mientras que en la terminal de Ubuntu, Debian o cualquier otro sistema instalado, se ejecutan programas de Linux en su respectivo entorno que corre dentro del sistema.
 
