@@ -15,18 +15,17 @@ toc: true
 toc_sticky: true
 --- 
 
+¡Qué tema el control de versiones! Es un problema clásico que aparece en la vida de un programador cuando empieza a cambiarle el nombre a los archivos a mano, con información de los cambios nuevos en el nombre.
 
-Que tema el control de versiones. Es un clásico problema que aparece en la vida de uno cuando empieza a cambiarle el nombre a los archivos a mano, con información de los cambios nuevos en el nombre.
+En el desarrollo de software se utilizan múltiples archivos en diversos lenguajes que interactúan entre sí para los interpretados o se encastran de cierta forma para generar un ejecutable en los compilados. Es fácil ver cómo el problema del versionado se va complicando. Ahora, imaginate cómo se complica si hay que coordinar los cambios de mucha gente al mismo tiempo y colaborar sin romper nada.
 
-Teniendo en cuenta que en el desarrollo de software se utilizan comunmente multiples archivos en multiples lenguajes que interactúan funcionalmente entre sí en ejecución para los interpretados o encastran de cierta forma para generar un ejecutable para los compilados es fácil ver que el problema del versionado se complica aún más. Ahora imaginate como se complica si hay que coordinar los cambios de mucha gente al mismo tiempo y colaborar cuanto más se puede llegar a complicar.
+Ahí fue donde apareció al rescate el gran prócer de la computación, Linus Torvalds, y en 2005 inventó Git para ordenar mejor el desarrollo del kernel de Linux y el resto es historia (no digo fué, porque se sigue construyendo y escribiendo día a día, [mira como commitea el loco Laaaiiinuuuusss!](https://github.com/torvalds/linux/commits?author=torvalds)).
 
-Ahi fue donde llegó al rescate el gran prócer de la computación Linus Torvalds e inventó Git en 2005 para ayudar a desarrollar mas ordenado el kernel de linux y el resto es historia (no digo fué, porque se sigue construyendo y escribiendo día a día, [mira como commitea el loco Laaaiiinuuuusss!](https://github.com/torvalds/linux/commits?author=torvalds))
+Git es un software de control de versiones distribuido que nos provee de un conjunto de herramientas para tener un seguimiento de cambios, volver atrás a estados anteriores, desarrollar cosas nuevas en paralelo y, sobre todo, trabajar con otras personas sin conflictos. 
 
-Git es un software de control de versiones distribuido que nos provee de un conjunto de herramientas para tener un seguimiento de cambios, poder volver atrás a estados previos de un conjunto de archivos, desarrollar cosas nuevas en paralelo y sobre todo trabajar con otras personas sin conflictos. 
+Bah, sin tantos conflictos, porque las personas seguimos estando involucradas en el proceso. Y esperemos que así siga por un tiempo.
 
-Bah sin tantos conflictos, las personas seguimos estando involucradas en el proceso. Y esperemos que así siga por un tiempo.
-
-La idea de este artículo es mostrar como funciona, para que se usa y finalmente cerrar con un ejemplo para implementar paso a paso, ya sea para proyectos personales o desarrollo colaborativo. 
+La idea de este artículo es mostrar cómo funciona Git, para qué se usa y, finalmente, cerrar con un ejemplo para implementar paso a paso, ya sea para proyectos personales o desarrollo colaborativo. 
 
 ![El mapa de como funciona Git!](/assets/images/posts/2024-06-06-git_flujo_de_trabajo.png)
 
@@ -34,19 +33,20 @@ La idea de este artículo es mostrar como funciona, para que se usa y finalmente
 
 ### ¿Qué es Git?
 
-Es un programa para automatizar el control de versiones. Visualmente, yo puedo tener mi copia local del proyecto, probar modificaciones en paralelo, moverlas a la version cuando creemos que el trabajo este listo y finalmente subir esos cambios a la principal que está en un servidor remoto (Puede ser Github o Gitlab). Ese repositorio remoto es donde se juntan todos los cambios de los colaboradores involucrados.
+Es un programa para automatizar el control de versiones en el desarrollo de software. Visualmente, yo puedo tener mi copia local del proyecto, probar modificaciones en paralelo y crear ramas (branches) para trabajar en diferentes partes del proyecto sin afectar la versión principal. Cuando el trabajo está listo, podés mover esos cambios a la versión principal mediante un proceso llamado "merge" o fusión. 
+Finalmente, subís esos cambios al repositorio remoto, que puede estar en plataformas GitHub o GitLab. Ese repositorio remoto es el lugar donde se juntan todos los cambios de los colaboradores involucrados en el proyecto.
 
-### ¿Que es Github?
+### ¿Qué es GitHub?
 
-[Github](https://github.com/) es una plataforma de desarrollo de software online. Ahi se puede tener una copia de nuestro repositorio en nuestra cuenta, es un backup remoto. 
+[Github](https://github.com/) es una plataforma de desarrollo de software online. Ahí se puede tener una copia de nuestro repositorio en nuestra cuenta, como un backup remoto. 
 
-En conjunto con Git, nos permite tener el repositorio central accesible por internet, publico o privado, que se puede compartir con colaboradores para darles acceso de lectura para los privados, o acceso de edición a colaboradores (que se identifican con su propia cuenta) para poder editar y hacer modificaciones en el repositorio online.
+En conjunto con Git, nos permite tener el repositorio central accesible por internet, público o privado, que se puede compartir con colaboradores para darles acceso de lectura para los privados, o acceso de edición a colaboradores (que se identifican con su propia cuenta) para poder editar y hacer modificaciones en el repositorio online.
 
 Con tu repositorio local, podes hacer lo que quieras una vez esta clonado. 
 
-### ¿Donde se guardan los archivos?
+### ¿Dónde se guardan los archivos?
 
-Un proyecto no es mas que un conjunto de archivos con información con distintas extensiones que definen como se ejecutan o que contienen. 
+Un proyecto no es más que un conjunto de archivos con información con distintas extensiones que definen cómo se ejecutan o qué contienen. 
 
 El directorio (o carpeta) que contiene todos los archivos del proyecto con el que interactuamos vive localmente en nuestra maquina. Ahi podemos usar versionado local para tener las distintas fotos del proyecto y sus archivos en distintos momentos. Lo que git guarda en sus carpetas es el historial de cambios. 
 

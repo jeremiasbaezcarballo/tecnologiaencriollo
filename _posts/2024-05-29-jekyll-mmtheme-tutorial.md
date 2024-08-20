@@ -18,7 +18,7 @@ Eso fue hasta que, recomendado en Youtube por Techno Tim, gran creador de conten
 
 ## Y esto, ¿cómo funciona?
 
-Jekyll es un generador de sitios web estáticos escrito en ruby que se encarga de convertir las configuraciones (.yml) y archivos markdown (.md) en todos los documentos necesarios para una web estática. Los archivos que nosotros editamos son texto plano, nada de andar renegando con sofisticados frameworks de frontend. Está pensado para ser simple, flexible y es fácilmente integrable con Github Pages por lo que se lo suele usar tanto para blogs personales como para documentaciones de proyectos.
+Jekyll es un generador de sitios web estáticos escrito en Ruby que se encarga de convertir las configuraciones (.yml) y archivos markdown (.md) en todos los documentos necesarios para una web estática. Los archivos que nosotros editamos son texto plano, nada de andar renegando con sofisticados frameworks de frontend. Está pensado para ser simple, flexible y es fácilmente integrable con Github Pages por lo que se lo suele usar tanto para blogs personales como para documentaciones de proyectos.
 
 **Sitios estáticos:** a diferencia de los sitios dinámicos, el usuario no puede interactuar con el contenido del sitio. O sea, llenar datos, formularios, hacer un login, etc. Al no generar contenido en tiempo real desde una base de datos, son mas rápidos, seguros y fáciles de desplegar.
 {: .notice--info}

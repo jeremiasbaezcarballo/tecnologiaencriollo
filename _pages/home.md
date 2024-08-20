@@ -3,9 +3,8 @@ tittle: "TECriollo"
 layout: splash
 permalink: /
 header:
-  overlay_color: "#000"
+  overlay_color: "#15e824"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/site/tec-default-teaser-500x300.png
   actions:
     - label: "Arrancá acá!"
       url: "/cursos/"
@@ -20,36 +19,36 @@ feature_row:
     excerpt: "Ahh! ¿Así que sabes usar una compu y te interesan las noticias de tecnología? Te cuento cómo viene la cosa y te paso algunas herramientas básicas que te pueden servir... pasá por acá"
     url: "categorias/#general"
     btn_label: "Vamo nomá!"
-    btn_class: "btn--primary"
+    btn_class: "btn--success"
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "placeholder image 2"
     title: "Principiante - Ya sé programar"
     excerpt: "Mortal! Ya seguramente has instalado algún que otro sistema operativo y sabes de los misteriosos medios de comunicación con la PC a través de la terminal... bueno, acá hay info de esas cosas"
     url: "categorias/#intermedio"
     btn_label: "Más tutoriales"
-    btn_class: "btn--primary"
+    btn_class: "btn--success"
   - image_path: /assets/images/raw-posts/rect1.png
     title: "Avanzado - Ya laburo de esto"
-    excerpt: "Bien ahi che! Te felicito, seguro andas buscando algo más picante. Bueno acá hay algunos proyectitos, análisis técnicos más detallados y noticias científicas más ñoñas. Toda crítica constructiva es bien recibida :)"
+    excerpt: "Bien ahí che! Te felicito, seguro andas buscando algo más picante. Bueno acá hay algunos proyectitos, análisis técnicos más detallados y noticias científicas más ñoñas. Toda crítica constructiva es bien recibida :)"
     url: "categorias/#avanzado"
     btn_label: "A ver che"
-    btn_class: "btn--primary"
+    btn_class: "btn--success"
 feature_row2:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "placeholder image 2"
-    title: "Proximamente: Curso introductorio a IA"
+    title: "Próximamente: Curso introductorio a IA"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
     url: "#test-link"
     btn_label: "Estoy!"
-    btn_class: "btn--primary"
+    btn_class: "btn--success"
 feature_row3:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "placeholder image 2"
-    title: "Proximamente: Curso de Pensamiento Sistémico"
+    title: "Próximamente: Curso de Pensamiento Sistémico"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
     url: "#test-link"
     btn_label: "Read More"
-    btn_class: "btn--primary"
+    btn_class: "btn--success"
 ---
 
 {% include feature_row id="intro" type="center" %}
