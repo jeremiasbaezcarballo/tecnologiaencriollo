@@ -23,9 +23,9 @@ Ahí fue donde apareció al rescate el gran prócer de la computación, Linus To
 
 Git es un software de control de versiones distribuido que nos provee de un conjunto de herramientas para tener un seguimiento de cambios, volver atrás a estados anteriores, desarrollar cosas nuevas en paralelo y, sobre todo, trabajar con otras personas sin conflictos. 
 
-Bah, sin tantos conflictos, porque las personas seguimos estando involucradas en el proceso. Y esperemos que así siga por un tiempo.
+Bah, sin tantos conflictos, porque las personas seguimos estando involucradas en el proceso. Y esperemos que así sea por un tiempo.
 
-La idea de este artículo es mostrar cómo funciona Git, para qué se usa y, finalmente, cerrar con un ejemplo para implementar paso a paso, ya sea para proyectos personales o desarrollo colaborativo. 
+La idea de este artículo es mostrar cómo funciona Git, para qué se usa y, finalmente, cerrar con un ejemplo para implementarlo paso a paso, ya sea para proyectos personales o desarrollo colaborativo. 
 
 ![El mapa de como funciona Git!](/assets/images/posts/2024-06-06-git_flujo_de_trabajo.png)
 
@@ -33,32 +33,30 @@ La idea de este artículo es mostrar cómo funciona Git, para qué se usa y, fin
 
 ### ¿Qué es Git?
 
-Es un programa para automatizar el control de versiones en el desarrollo de software. Visualmente, yo puedo tener mi copia local del proyecto, probar modificaciones en paralelo y crear ramas (branches) para trabajar en diferentes partes del proyecto sin afectar la versión principal. Cuando el trabajo está listo, podés mover esos cambios a la versión principal mediante un proceso llamado "merge" o fusión. 
+Git es un programa para automatizar el control de versiones en el desarrollo de software. Visualmente, yo puedo tener mi copia local del proyecto, probar modificaciones en paralelo y crear ramas (branches) para trabajar en diferentes partes del proyecto sin afectar la versión principal. Cuando el trabajo está listo, podés mover esos cambios a la versión principal mediante un proceso llamado "merge" o fusión. 
 Finalmente, subís esos cambios al repositorio remoto, que puede estar en plataformas GitHub o GitLab. Ese repositorio remoto es el lugar donde se juntan todos los cambios de los colaboradores involucrados en el proyecto.
 
 ### ¿Qué es GitHub?
 
-[Github](https://github.com/) es una plataforma de desarrollo de software online. Ahí se puede tener una copia de nuestro repositorio en nuestra cuenta, como un backup remoto. 
+[Github](https://github.com/) es una plataforma online de desarrollo de software que te permite tener una copia de tu repositorio en tu cuenta, funcionando como un backup remoto. 
 
-En conjunto con Git, nos permite tener el repositorio central accesible por internet, público o privado, que se puede compartir con colaboradores para darles acceso de lectura para los privados, o acceso de edición a colaboradores (que se identifican con su propia cuenta) para poder editar y hacer modificaciones en el repositorio online.
+En conjunto con Git, permite tener un repositorio central accesible por internet, ya sea público o privado. Podés compartir este repositorio con colaboradores, dándoles acceso de solo lectura en caso de repositorios privados, o acceso de edición a colaboradores. Cada colaborador se identifica con su propia cuenta, lo que facilita la gestión de permisos.
 
-Con tu repositorio local, podes hacer lo que quieras una vez esta clonado. 
+Una vez que tenés tu repositorio clonado localmente, podés hacer lo que quieras con él.
 
 ### ¿Dónde se guardan los archivos?
 
-Un proyecto no es más que un conjunto de archivos con información con distintas extensiones que definen cómo se ejecutan o qué contienen. 
+Un proyecto no es más que un conjunto de archivos con diferentes extensiones que definen cómo se ejecutan o qué contienen. 
 
-El directorio (o carpeta) que contiene todos los archivos del proyecto con el que interactuamos vive localmente en nuestra maquina. Ahi podemos usar versionado local para tener las distintas fotos del proyecto y sus archivos en distintos momentos. Lo que git guarda en sus carpetas es el historial de cambios. 
+El directorio (o carpeta) que contiene todos los archivos del proyecto con el que interactuamos vive localmente en nuestra máquina. Ahí, podés usar Git para versionar tu trabajo, guardando "fotos" del proyecto en distintos momentos del tiempo. Git guarda el historial de cambios en sus carpetas, lo que te permite rastrear y revertir modificaciones si es necesario.
 
-Ese historial luego se sincroniza cuando queremos interactuar con el repositorio remoto subiendo cambios, que es compartido entre los miembros de un equipo de trabajo. 
-
-A su vez de este remoto podemos crear copias locales de otros branches, y traernos los ultimos cambios que hayan subido nuestros compañeros en los branches que trabajamos en conjunto. 
+Este historial se sincroniza cuando decidís interactuar con el repositorio remoto, subiendo los cambios para que sean compartidos con los demás miembros de tu equipo de trabajo. Además, desde este repositorio remoto podés crear copias locales de otras ramas (branches) y traerte los últimos cambios que hayan subido tus compañeros en las ramas en las que están trabajando juntos. 
 
 ### Flujo de Trabajo de Git para Desarrollo
 
 #### Creando o Clonando un Repositorio
 
-Para comenzar un nuevo proyecto o trabajar en uno existente se puede hacerlo:
+Comenzar un nuevo proyecto o trabajar en uno existente se puede hacer de las siguientes formas:
 
 1. Creando un nuevo repositorio:
    - Inicializá un nuevo repositorio de Git localmente
@@ -72,23 +70,23 @@ Cuando uno clona, lo que hace es justamente clonar el repositorio remoto a un nu
 
 #### Haciendo Cambios y Commiteando
 
-A medida que trabajás en tu proyecto, Git rastrea los cambios en tus archivos. El flujo de trabajo básico involucra:
+A medida que trabajás en tu proyecto, Git rastrea los cambios en tus archivos. El flujo de trabajo básico sigue estos pasos:
 
-1. Modificar archivos en tu directorio de trabajo
-2. Stagear los cambios que querés commitear
-3. Commitear los cambios stageados con mensajes descriptivos
-4. Opcionalmente, pushear los commits a un repositorio remoto
+1. Modificar los archivos en tu directorio de trabajo.
+2. Stagear (o preparar) los cambios que querés commitear.
+3. Commitear los cambios stageados con mensajes descriptivos.
+4. Opcionalmente, pushear los commits a un repositorio remoto.
 
 #### Colaborando con Otros
 
-Cuando trabajás en proyectos compartidos:
+Cuando trabajás en proyectos compartidos, el flujo de trabajo suele ser el siguiente:
 
-1. Pulleá los últimos cambios del repositorio remoto
-2. Creá una nueva rama para tu feature o corrección de bug
-3. Hacé y commiteá tus cambios
-4. Pusheá la rama al repositorio remoto
-5. Creá un pull request para revisión (si usás una plataforma como GitHub)
-6. Mergeá los cambios después de la aprobación
+1. Pulleás los últimos cambios del repositorio remoto.
+2. Creás una nueva rama para tu feature o corrección de bug.
+3. Hacés y commiteás tus cambios.
+4. Pusheás la rama al repositorio remoto.
+5. Creás un pull request para revisión (si usás una plataforma como GitHub).
+6. Mergeás los cambios después de la aprobación.
 
 ### Conceptos Clave de Git
 
@@ -96,62 +94,61 @@ Cuando trabajás en proyectos compartidos:
 
 Un repositorio de Git es una colección de archivos y su historial de revisiones. Hay dos tipos:
 
-1. Repositorio local: Existe en tu máquina
-2. Repositorio remoto: Alojado en un servidor (por ejemplo, GitHub, GitLab, Bitbucket)
+1. **Repositorio local**: Existe en tu máquina.
+2. **Repositorio remoto**: Alojado en un servidor, como GitHub, GitLab o Bitbucket.
 
-No a todos los archivos git los tiene en cuenta para esto. Los estados del archivo pueden ser:
-
-   - **No Rastreado - _untracked_**: Archivos nuevos agregados al proyecto que Git aún no está vigilando.
-   - **Preparado - _added_**: Archivos que están marcados para ser incluidos en el próximo commit. Preparas los cambios usando el comando `git add`.
-   - **Cometido - _commited_**: Cambios que han sido registrados en el historial del repositorio. Cometes cambios usando el comando `git commit`.
-   - **Ignorados - _ignored_**: Archivos que git va a ignorar para el control de versiones. Por ejemplo, archivos de claves para conexión y acceso a recursos, archivos demasiado grandes, configuraciones locales o archivos auxiliares que se crean localmente durante el desarrollo. Estos se detallan en un archivo oculto en la raiz del proyecto llamado .Gitignore.
+Git no rastrea todos los archivos del proyecto automáticamente. Los archivos pueden estar en los siguientes estados:
+   - **No Rastreado - _untracked_**: Archivos nuevos agregados al proyecto que Git aún no está siguiendo.
+   - **Preparado - _added_**: Archivos que están listos para ser incluidos en el próximo commit. Los cambios se preparan usando el comando `git add`.
+   - **Cometido - _commited_**: Cambios que han sido registrados en el historial del repositorio. Se guardan en el historial usando el comando `git commit`.
+   - **Ignorados - _ignored_**: Archivos que git no rastreará, como archivos de claves para conexión y acceso a recursos, archivos demasiado grandes, configuraciones locales o archivos auxiliares que se crean localmente durante el desarrollo. Estos se especifican en un archivo oculto en la raíz del proyecto llamado `.gitignore`.
 
 
 #### Commits
 
 Un commit representa un punto específico en la historia del proyecto. Incluye:
 
-- Un identificador único (hash)
-- Un mensaje de commit describiendo los cambios
-- Una instantánea del proyecto en ese punto
+- Un identificador único (hash).
+- Un mensaje de commit describiendo los cambios realizados.
+- Una instantánea del proyecto en ese momento.
 
 #### Ramas
 
-Las ramas te permiten divergir de la línea principal de desarrollo y trabajar en features o experimentos de forma independiente.
+Las ramas te permiten divergir de la línea principal de desarrollo para trabajar en nuevas features o experimentos de forma independiente, sin afectar el código principal.
 
 #### Merging
 
-El merging es el proceso de integrar cambios de una rama a otra, típicamente combinando ramas de features de vuelta a la rama principal.
+El merging es el proceso de integrar cambios de una rama a otra, típicamente combinando ramas de features de vuelta a la rama principal (main o master).
 
 #### Seguimiento Remoto
 
-Git te permite mantener tu repositorio local sincronizado con repositorios remotos, permitiendo colaboración y backup.
+Git te permite mantener tu repositorio local sincronizado con repositorios remotos, facilitando la colaboración y backup del proyecto.
 
 ### Mejores Prácticas
 
-1. Commiteá frecuentemente con mensajes claros y descriptivos
-2. Usá ramas para nuevas features o experimentos
-3. Mantené la rama principal estable , compilando y desplegable
-4. Revisá los cambios antes de mergear
-5. Usá `.gitignore` para excluir archivos innecesarios
-6. Pulleá regularmente los cambios del repositorio remoto
-7. Resolvé conflictos rápida y cuidadosamente
+1. Commiteá frecuentemente con mensajes claros y descriptivos.
+2. Usá ramas para desarrollar nuevas features o experimentos.
+3. Mantené la rama principal estable, siempre lista para compilar y desplegar.
+4. Revisá los cambios antes de mergear.
+5. Usá `.gitignore` para excluir archivos innecesarios.
+6. Pulleá regularmente los cambios del repositorio remoto.
+7. Resolvé conflictos rápida y cuidadosamente.
 
-Al entender estos conceptos y seguir las mejores prácticas, estarás bien equipado para usar Git efectivamente tanto para proyectos personales como para desarrollo colaborativo.
+Al entender estos conceptos y seguir las mejores prácticas, estarás bien preparado para usar Git de manera efectiva, tanto en proyectos personales como en desarrollo colaborativo.
 
 ## Tutorial Práctico: Configuración y Contribución
 
-Este tutorial práctico te guiará a través del proceso de crear un nuevo repositorio, configurar un sitio Jekyll y hacer contribuciones usando Git y GitHub. Cubriremos tanto operaciones de línea de comandos como integración con Visual Studio Code.
+Este tutorial práctico te guiará a través del proceso de creación de un nuevo repositorio, configurar un sitio Jekyll y hacer contribuciones usando Git y GitHub. Cubriremos tanto operaciones de línea de comandos como integración con Visual Studio Code.
 
 ### Prerrequisitos
 
 Antes de comenzar este tutorial, asegurate de tener:
 
-1. Git instalado en tu sistema
-2. Una cuenta de GitHub
-3. GitHub CLI (`gh`) instalado
-4. Jekyll instalado
-5. Visual Studio Code (VSCode) instalado
+1. Git instalado en tu sistema.
+2. Una cuenta de GitHub.
+3. GitHub CLI (`gh`) instalado.
+4. Jekyll instalado.
+5. Visual Studio Code (VSCode) instalado.
 
 ### Parte 1: Operaciones de Línea de Comandos
 
@@ -285,33 +282,53 @@ git config user.email "tu.email@ejemplo.com"
    gh pr merge
    ```
 
-TODO: Revisar proceso y metodologia de revision de pull request y review
+TODO: Revisar proceso y metodología de revisión de pull request y review.
 
-Es común para las primeras veces que rompamos el codigo en una rama, o combinemos mal las versiones, o un merge de código da conflictos y nos abatatemos para resolverlo mientras estamos aprendiendo. Cuando el local esta roto, puede surgir la tentación de clonar todo de cero nuevamente, soy culpable de hacerlo. Pero, hoy por hoy si te pasa, te recomiendo antes usar un asistente de IA, explicando el contexto del repositorio, el problema y finalmente el error que nos esta dando la terminal o VSCode. Y despues le decis que queres hacer y que te pase los comandos para hacerlo.
+Es común para las primeras veces que rompamos el codigo en una rama, o combinemos mal las versiones, o un merge de código da conflictos y nos apuremos para resolverlo mientras estamos aprendiendo. Cuando el local está roto, puede surgir la tentación de clonar todo de cero nuevamente, soy culpable de hacerlo. Pero, si te pasa, te recomiendo usar un asistente de IA, explicando el contexto del repositorio, el problema y finalmente el error que nos está dando la terminal o VSCode. Después le decis qué querés hacer y te responde con los comandos para hacerlo.
 {: .notice--info}
 
 
 ### Parte 2: Usando Visual Studio Code
 
-Ahora, vamos a pasar por el mismo proceso usando Visual Studio Code con la vista de Control de Código Fuente y la extensión de GitHub Pull Request.
+Ahora vamos a pasar por el mismo proceso usando Visual Studio Code con la vista de Control de Código Fuente y la extensión de GitHub Pull Request.
 
 1. Abrí Visual Studio Code y navegá a la vista "Control de código fuente" (Ctrl+Shift+G).
 
-2. Dependiendo de si tenes VSCode abierto Hacé clic en "Clonar repositorio" e ingresá la URL de tu repositorio de GitHub.
+2. Si tenés VSCode abierto hacé clic en "Clonar repositorio" e ingresá la URL de tu repositorio de GitHub.
+
+![Control de codigo fuente](/assets/images/posts/GH1.png)
 
 3. Una vez clonado, podés hacer cambios en tus archivos directamente en VSCode.
 
 4. Para stagear cambios, hacé clic en el ícono "+" junto a los archivos modificados en la vista de Control de código fuente.
 
+![Stage](/assets/images/posts/GH2.png)
+
 5. Para commitear cambios, ingresá un mensaje de commit en el cuadro de texto y hacé clic en el ícono de tilde.
+
+![Commit](/assets/images/posts/GH3.png)
 
 6. Para pushear cambios, hacé clic en el menú "..." en la vista de Control de código fuente y seleccioná "Push".
 
+![Push](/assets/images/posts/GH4.png)
+
 7. Para crear una nueva rama, hacé clic en el nombre de la rama en la esquina inferior izquierda y seleccioná "Crear nueva rama".
+
+![Branch](/assets/images/posts/GH5.png)
 
 8. Después de hacer cambios en la nueva rama, pusheá la rama a GitHub.
 
 9. En la extensión GitHub Pull Request (instalada desde el marketplace de VSCode), podés crear un nuevo pull request haciendo clic en el botón "Crear Pull Request".
+
+![Extensión](/assets/images/posts/GH6.png)
+
+Aquí podemos ver los cambios realizados:
+
+![Cambios](/assets/images/posts/GH7.png)
+
+Hacemos el Pull Request:
+
+![Pull Request](/assets/images/posts/GH8.png)
 
 10. Revisá y mergeá el pull request directamente desde la extensión GitHub Pull Request en VSCode.
 
@@ -323,22 +340,30 @@ Esta sección se enfoca en el proceso de contribuir a un sitio Jekyll existente 
 
 Antes de comenzar, asegurate de tener:
 
-1. Git instalado en tu sistema
-2. Una cuenta de GitHub
-3. Visual Studio Code (VSCode) instalado
-4. Acceso a una terminal Linux (Ubuntu o WSL)
+1. Git instalado en tu sistema.
+2. Una cuenta de GitHub.
+3. Visual Studio Code (VSCode) instalado.
+4. Acceso a una terminal Linux (Ubuntu o WSL).
 
 ### Paso 1: Forkear el Repositorio
 
 1. Navegá a la página de GitHub del repositorio del sitio Jekyll al que querés contribuir.
 2. Hacé clic en el botón "Fork" en la esquina superior derecha de la página.
+
+![Fork1](/assets/images/posts/Fork1.png)
+
+Te aparecerá un mensaje así:
+
+![Fork2](/assets/images/posts/Fork2.png)
+
 3. GitHub creará una copia del repositorio bajo tu cuenta.
 
 Para esta parte del tutorial podes usar este [repositorio de ejemplo](https://github.com/jeremiasbaezcarballo/git-en-criollo-tutorial) en mi cuenta.
 
 ### Paso 2: Clonar Tu Repositorio Forkeado
 
-En este momento, vos hiciste un fork que seria una copia de un repositorio propia dentro de tu cuenta. Todo lo que modifiques ahi, es exclusivamente tuyo. Ahora vamos a ver como es el flujo de trabajo normal para este caso de uso. Asi se hace para trabajar en el desarrollo de software libre abierto colaborativo normalmente.
+En este momento, vos hiciste un fork que es una copia de un repositorio propia dentro de tu cuenta. Todo lo que modifiques ahí, es exclusivamente tuyo. Ahora vamos a ver cómo es el flujo de trabajo normal para este caso de uso. 
+Así se hace para trabajar en el desarrollo de software libre abierto colaborativo normalmente:
 
 1. En la página de GitHub de tu repositorio forkeado, hacé clic en el botón "Code" y copiá la URL HTTPS.
 2. Abrí tu terminal y navegá al directorio donde querés clonar el repositorio.
@@ -437,11 +462,20 @@ Para contribuir tus cambios de vuelta al repositorio original:
 
 1. Andá a la página de GitHub de tu fork.
 2. Hacé clic en "Pull requests" y luego en "New pull request".
+
+![Fork3](/assets/images/posts/Fork3.png)
+
 3. Asegurate de que el repositorio base sea el repositorio original y el repositorio head sea tu fork.
 4. Seleccioná las ramas que querés comparar.
 5. Hacé clic en "Create pull request".
-6. Agregá un título y descripción para tu pull request, explicando tus cambios.
-7. Hacé clic en "Create pull request" para enviar.
+6. Agregá un título y descripción para tu pull request, explicando tus cambios. Todo esto se ve así:
+
+![Fork4](/assets/images/posts/Fork4.png)
+
+7. Hacé clic en "Create pull request" para enviar. Al envierlo deberías ver algo así:
+
+![Fork5](/assets/images/posts/Fork5.png)
+
 
 ## Conclusión
 
