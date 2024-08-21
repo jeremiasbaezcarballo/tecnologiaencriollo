@@ -472,7 +472,7 @@ Para contribuir tus cambios de vuelta al repositorio original:
 
 ![Fork4](/assets/images/posts/Fork4.png)
 
-7. Hacé clic en "Create pull request" para enviar. Al envierlo deberías ver algo así:
+7. Hacé clic en "Create pull request" para enviar. Al enviarlo deberías ver algo así:
 
 ![Fork5](/assets/images/posts/Fork5.png)
 
