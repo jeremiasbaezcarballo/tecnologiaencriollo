@@ -1,0 +1,54 @@
+{% assign languages = site.languages %}
+{% assign current_lang = site.default_lang %}
+
+<nav class="lang-nav" style="position: absolute; top: 1rem; right: 1rem; z-index: 1000;">
+    <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()"
+            style="background: #333; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem; color: #ff4444; transition: all 0.2s ease;">
+            {{ current_lang | upcase }}
+            <span style="margin-left: 0.5rem; display: inline-block; transform: translateY(-1px);">▼</span>
+        </button>
+        <div id="langMenu" class="lang-menu"
+            style="display: none; position: absolute; right: 0; background: #333; border-radius: 4px; margin-top: 0.25rem; min-width: 120px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+            {% for lang in languages %}
+            {% if lang != current_lang %}
+            {% capture lang_link %}{{ site.baseurl_root }}/{{ lang }}{{ page.url }}{% endcapture %}
+            <a href="{{ lang_link }}" class="lang-option"
+                style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: #ff4444; font-size: 0.9rem; transition: background 0.2s ease; text-align: center;"
+                onmouseover="this.style.background='#444'" onmouseout="this.style.background='#333'">
+                {{ lang | upcase }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleLangMenu() {
+        const menu = document.getElementById('langMenu');
+        const isHidden = menu.style.display === 'none';
+        menu.style.display = isHidden ? 'block' : 'none';
+        menu.style.opacity = 0;
+        if (isHidden) {
+            setTimeout(() => menu.style.opacity = 1, 50);
+        }
+    }
+
+    document.addEventListener('click', function (event) {
+        const langNav = document.querySelector('.lang-nav');
+        if (!langNav.contains(event.target)) {
+            document.getElementById('langMenu').style.display = 'none';
+        }
+    });
+</script>
+
+<style>
+    .lang-btn:hover {
+        background: #444 !important;
+    }
+
+    .lang-menu {
+        transition: opacity 0.2s ease;
+    }
+</style>

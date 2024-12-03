@@ -1,6 +1,8 @@
 ---
 permalink: /acerca/
 title: "Acerca de TEC"
+lang: es
+# page_id: about
 ---
 
 Tecnología en Criollo nace con la intención de compartir de manera pública la información de tecnología que considero interesante, las herramientas que uso en mi día a día y mantener una especie de "diario de campo" con recursos técnicos, seguimientos de proyectos personales y algún que otro curso que haya desarrollado. 

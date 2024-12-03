@@ -1,7 +1,9 @@
 ---
-tittle: "TECriollo"
+title: "TECriollo"
 layout: splash
 permalink: /
+lang: es
+page_id: home
 header:
   overlay_color: "#15e824"
   overlay_filter: "0.5"
@@ -59,3 +61,4 @@ feature_row3:
 
 {% include feature_row id="feature_row3" type="center" %}
 
+{% include language-selector.html %}

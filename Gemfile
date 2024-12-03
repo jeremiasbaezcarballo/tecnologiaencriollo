@@ -16,6 +16,8 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "jekyll-remote-theme"
   gem 'jekyll-spaceship'
+  gem 'jekyll-polyglot'
+  gem 'jekyll-redirect-from'
 end
 
 gem "webrick", "~> 1.8"

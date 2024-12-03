@@ -3,6 +3,7 @@ title: "¡Linux dentro de Windows con WSL!"
 last_modified_at: 2024-05-28T20:20:02-03:00
 categories:
   - Conocedor
+lang: es
 tags:
   - Tutoriales Herramientas
   - principiantes
