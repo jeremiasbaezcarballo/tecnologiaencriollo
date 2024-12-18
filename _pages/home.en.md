@@ -3,7 +3,6 @@ title: "TECriollo"
 layout: splash
 permalink: /
 lang: en
-page_id: home
 header:
   overlay_color: "#15e824"
   overlay_filter: "0.5"

@@ -1,5 +1,13 @@
-{% assign languages = site.languages %}
-{% assign current_lang = site.default_lang %}
+<!-- {% assign languages = site.languages %}
+{% assign current_lang = 'es' %}
+
+{% assign url_parts = page.url | split: '/' %}
+{% for lang in languages %}
+{% if url_parts[1] == lang %}
+{% assign current_lang = lang %}
+{% break %}
+{% endif %}
+{% endfor %}
 
 <nav class="lang-nav" style="position: absolute; top: 1rem; right: 1rem; z-index: 1000;">
     <div class="lang-dropdown">
@@ -12,11 +20,48 @@
             style="display: none; position: absolute; right: 0; background: #333; border-radius: 4px; margin-top: 0.25rem; min-width: 120px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
             {% for lang in languages %}
             {% if lang != current_lang %}
-            {% capture lang_link %}{{ site.baseurl_root }}/{{ lang }}{{ page.url }}{% endcapture %}
+            {% if lang == site.default_lang %}
+            {% assign lang_link = page.url | replace_first: current_lang, "" | remove_first: "/" %}
+            {% if lang_link == "" %}{% assign lang_link = "/" %}{% endif %}
+            {% assign lang_link = site.baseurl_root | append: lang_link %}
+            {% else %}
+            {% capture lang_link %}{{ site.baseurl_root }}/{{ lang }}{{ page.url | replace_first: current_lang, "" }}{%
+            endcapture %}
+            {% endif %}
             <a href="{{ lang_link }}" class="lang-option"
                 style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: #ff4444; font-size: 0.9rem; transition: background 0.2s ease; text-align: center;"
                 onmouseover="this.style.background='#444'" onmouseout="this.style.background='#333'">
                 {{ lang | upcase }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</nav> -->
+
+{% assign current_lang = site.active_lang %}
+
+<nav class="lang-nav" style="position: absolute; top: 1rem; right: 1rem; z-index: 1000;">
+    <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()"
+            style="background: #333; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem; color: #ff4444; transition: all 0.2s ease;">
+            {{ current_lang | upcase }}
+            <span style="margin-left: 0.5rem; display: inline-block; transform: translateY(-1px);">▼</span>
+        </button>
+        <div id="langMenu" class="lang-menu"
+            style="display: none; position: absolute; right: 0; background: #333; border-radius: 4px; margin-top: 0.25rem; min-width: 120px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+            {% for tongue in site.languages %}
+            {% if tongue != current_lang %}
+            {% if current_lang == 'en' %}
+            {% assign page_url = page.url | remove: '/en/' %}
+            {% else %}
+            {% assign page_url = page.url %}
+            {% endif %}
+            <a href="{% if tongue == site.default_lang %}{{ site.baseurl }}{{ page_url }}{% else %}{{ site.baseurl }}/{{ tongue }}{{ page_url }}{% endif %}"
+                class="lang-option"
+                style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: #ff4444; font-size: 0.9rem; transition: background 0.2s ease; text-align: center;"
+                onmouseover="this.style.background='#444'" onmouseout="this.style.background='#333'">
+                {{ tongue | upcase }}
             </a>
             {% endif %}
             {% endfor %}

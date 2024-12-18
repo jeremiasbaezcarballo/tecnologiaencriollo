@@ -1,5 +1,5 @@
 ---
-title: "TECriollo"
+title: "Tecnología En Criollo"
 layout: splash
 permalink: /
 lang: es
@@ -38,7 +38,7 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "placeholder image 2"
-    title: "Próximamente: Curso introductorio a IA"
+    title: "Curso introductorio a IA"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
     url: "#test-link"
     btn_label: "Estoy!"

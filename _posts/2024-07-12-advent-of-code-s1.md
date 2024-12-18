@@ -51,4 +51,8 @@ Una vez resuelto esto, ya con una mínima base puedo ir encarando la segunda eta
 
 ## Segundo desafío: Levantar el ambiente
 
-Ahora viene lo
+Ahora viene lo bueno y básico: Levantar el ambiente. Por suerte Go se instala bastante rápido y directo:
+
+1. Ir a 
+
+

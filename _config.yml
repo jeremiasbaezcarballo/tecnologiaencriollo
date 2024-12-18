@@ -62,10 +62,11 @@ plugins:
 
 languages: ["es", "en"]
 default_lang: "es"
-exclude_from_localization: ["javascript", "images", "css"]
-parallel_localization: false
-whitelist:
-  - jekyll-redirect-from
+exclude_from_localization: ["javascript", "assets/images", "css"]
+parallel_localization: true
+
+sass:
+  sourcemap: never
 
 github: [metadata]
 
