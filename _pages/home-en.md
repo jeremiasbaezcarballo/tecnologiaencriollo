@@ -1,5 +1,6 @@
 ---
-title: "TECriollo"
+page_id: home
+title: "Tech in Criollo"
 layout: splash
 permalink: /
 lang: en
@@ -8,10 +9,10 @@ header:
   overlay_filter: "0.5"
   actions:
     - label: "Start here!"
-      url: "/courses/"
+      url: "/en/courses/"
 excerpt: "Tech news, tutorials, and courses adapted from the most advanced and up-to-date sources, translated into simple everyday language. Our goal is to provide technical information in a clear and accessible way, maintaining a friendly and understandable approach for everyone."
-intro: 
-  - excerpt: 'We explain, inform, and spread knowledge about technology, applications, benefits, challenges, and risks. We also share tools, programming tutorials, projects, and open courses. Whether you're a beginner, enthusiast, or expert in these topics, you'll find something useful here!'
+intro:
+  - excerpt: "We explain, inform, and spread knowledge about technology, applications, benefits, challenges, and risks. We also share tools, programming tutorials, projects, and open courses. Whether you're a beginner, enthusiast, or expert in these topics, you'll find something useful here!"
 feature_row:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "knowledgeable"
@@ -50,6 +51,7 @@ feature_row3:
     btn_label: "Read More"
     btn_class: "btn--success"
 ---
+
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}
 {% include feature_row id="feature_row2" type="center" %}

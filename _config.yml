@@ -17,9 +17,9 @@ title: Tecnología en Criollo
 subtitle: Version 0.0.2
 name: Jere Baez Carballo
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
-  Proyectos de fin de semana, artículos, tutoriales, cursos y algo más."
+description: # this means to ignore newlines until "baseurl:"
+  es: Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés. Proyectos de fin de semana, artículos, tutoriales, cursos y algo más.
+  en: An engineering, programming and overal technology blog. From argentina with <3
 github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
 url: "https://tecnologiaencriollo.com"
@@ -62,8 +62,9 @@ plugins:
 
 languages: ["es", "en"]
 default_lang: "es"
-exclude_from_localization: ["javascript", "assets/images", "css"]
-parallel_localization: true
+lang_from_path: true
+exclude_from_localization: ["javascript", "assets", "css"]
+parallel_localization: false
 
 sass:
   sourcemap: never

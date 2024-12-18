@@ -1,9 +1,9 @@
 ---
+page_id: home
 title: "Tecnología En Criollo"
 layout: splash
 permalink: /
 lang: es
-page_id: home
 header:
   overlay_color: "#15e824"
   overlay_filter: "0.5"
@@ -13,7 +13,7 @@ header:
 
 excerpt: "Noticias tecnológicas, tutoriales y cursos adaptados de las fuentes más avanzadas y actualizadas, traducidos al castellano argento y cordobés básico. Nuestro objetivo es brindar información técnica de manera clara y accesible, manteniendo un enfoque cercano y comprensible para todos."
 intro: 
-  - excerpt: 'Explicamos, informamos y difundimos sobre tecnología, aplicaciones, beneficios, desafíos y riesgos. También compartimos herramientas, tutoriales de programación, proyectos y cursos abiertos. Ya seas principiante, adepto o experto en estos temas, algo de lo que hay por acá te tiene que servir!'
+  - excerpt: "Explicamos, informamos y difundimos sobre tecnología, aplicaciones, beneficios, desafíos y riesgos. También compartimos herramientas, tutoriales de programación, proyectos y cursos abiertos. Ya seas principiante, adepto o experto en estos temas, algo de lo que hay por acá te tiene que servir!"
 feature_row:
   - image_path: /assets/images/raw-posts/rect1.png
     alt: "conocedor"
@@ -60,5 +60,3 @@ feature_row3:
 {% include feature_row id="feature_row2" type="center" %}
 
 {% include feature_row id="feature_row3" type="center" %}
-
-{% include language-selector.html %}
