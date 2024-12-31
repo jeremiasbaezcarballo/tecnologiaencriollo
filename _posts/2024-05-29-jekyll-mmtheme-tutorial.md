@@ -1,6 +1,7 @@
 ---
 title: "Jekyll: Sitios web estáticos amigables"
 last_modified_at: 2024-05-29T20:20:02-03:00
+lang: es
 categories:
   - Principiante
 tags:

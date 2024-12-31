@@ -17,12 +17,12 @@ title: Tecnología en Criollo
 subtitle: Version 0.0.2
 name: Jere Baez Carballo
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  "Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés.
-  Proyectos de fin de semana, artículos, tutoriales, cursos y algo más."
+description: # this means to ignore newlines until "baseurl:"
+  es: Una página sobre ingeniería, programación, y tecnología en general escrito en idioma argento con acento cordobés. Proyectos de fin de semana, artículos, tutoriales, cursos y algo más.
+  en: An engineering, programming and overal technology blog. From argentina with <3
 github_username: jeremiasbaezcarballo
 minimal_mistakes_skin: dark
-url: "https://tecnologiaencriollo.com" # the base hostname & protocol for your site
+url: "https://tecnologiaencriollo.com"
 baseurl: ""
 locale: "es-ES"
 search: true
@@ -34,38 +34,21 @@ show_author: true
 read_time: true
 words_per_minute: 250
 
-# Build settings
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: "America/Argentina/Cordoba" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: "America/Argentina/Cordoba"
 include:
   - _pages
   - _courses
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Analytics
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-XVXW1XJSE8"
 
-# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -75,6 +58,16 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
   - jekyll-spaceship
+  - jekyll-polyglot
+
+languages: ["es", "en"]
+default_lang: "es"
+lang_from_path: true
+exclude_from_localization: ["javascript", "assets", "css"]
+parallel_localization: false
+
+sass:
+  sourcemap: never
 
 github: [metadata]
 
@@ -109,7 +102,6 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -120,14 +112,12 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: False
-  # _courses
   - scope:
       path: "_courses"
       type: courses
@@ -145,4 +135,4 @@ tag_archive:
 compress_html:
   clippings: all
   ignore:
-    envs: development # disable compression in dev environment
+    envs: development

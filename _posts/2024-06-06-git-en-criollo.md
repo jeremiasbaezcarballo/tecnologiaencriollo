@@ -2,6 +2,7 @@
 layout: single
 title: "Control de versiones con Git en criollo: Tutorial ATP y APB"
 last_modified_at: 2024-05-29T20:20:02-03:00
+lang: es
 categories:
   - Principiante
 tags:

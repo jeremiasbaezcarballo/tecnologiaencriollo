@@ -1,0 +1,50 @@
+{% assign current_lang = site.active_lang %}
+
+<nav class="lang-nav">
+    <div class="lang-switcher">
+        {% for tongue in site.languages %}
+        <a {% if tongue==site.active_lang %}class="lang-link active" {% else %}class="lang-link" {% endif %} {%
+            static_href
+            %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
+            {% endstatic_href %}>
+            {{ tongue | upcase }}
+        </a>
+        {%- if forloop.last == false -%}
+        <span class="lang-separator">|</span>
+        {%- endif -%}
+        {% endfor %}
+    </div>
+</nav>
+
+
+<style>
+    .lang-nav {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+
+    .lang-link {
+        background: #333;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        color: #ff4444;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: background 0.2s ease;
+    }
+
+    .lang-link:hover {
+        background: #444;
+    }
+
+    .lang-link.active {
+        font-weight: bold;
+    }
+
+    .lang-separator {
+        margin: 0 0.5rem;
+        color: #ff4444;
+    }
+</style>

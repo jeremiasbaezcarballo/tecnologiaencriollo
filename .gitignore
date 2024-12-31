@@ -4,3 +4,5 @@ _drafts
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+
+assets/images/locales
