@@ -88,7 +88,7 @@ En una terminal ejecutamos programas, el equivalente al doble click en un ícono
 
 En mi opinión, la mejor funcionalidad es la posibilidad de abrir VSCode desde el sistema operativo principal (Windows), que se conecta y trata como un servidor remoto a WSL. En criollo, se conecta automáticamente y todo archivo que modifiques o código que ejecutes o compiles se realiza dentro de WSL, pero la interfaz visual sigue estando en el Windows. Anda más rápido. 
 
-Para abrir un directorio en VSCode desde la terminal, basta con ejecutar *code .* dentro del directorio de WSL sobre el que queremosdesarrollar. Esto significa "Ejecuta el programa `code` dentro del directorio actual (representado por el .)".
+Para abrir un directorio en VSCode desde la terminal, basta con ejecutar *code .* dentro del directorio de WSL sobre el que queremos desarrollar. Esto significa "Ejecuta el programa `code` dentro del directorio actual (representado por el .)".
 
 ### ¿Dónde están todos los archivos?
 

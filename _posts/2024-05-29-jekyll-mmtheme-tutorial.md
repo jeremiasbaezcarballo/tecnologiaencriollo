@@ -182,7 +182,7 @@ author_profile: true
 El layout es el que nos define el estilo de esa página en particular, ya sea un post u otra de las páginas de navegación y auxiliares, como categorías y tags.
 {: .notice--info}
 
-3. Borrar _about.md_ o como mínimo cambiar las referencias que digan **layout: page** a **layout: single**
+3. Borrar _about.md_ o como mínimo cambiar las referencias que digan **layout: page** a **layout: single**.
 
 Finalmente ejecutar:
 
@@ -205,4 +205,4 @@ Pero por ahora, con lo que viste hasta acá, deberías poder empezar a usarlo, e
 Fuentes:
 
 - [Jekyll](https://jekyllrb.com/)
-- [Minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/)
+- [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/)

@@ -12,3 +12,11 @@ Jere:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jerebaez/"
+
+Jazmin:
+  name: "Jazmin Baez Carballo"
+  avatar: https://avatars.githubusercontent.com/u/172072771?v=4
+  bio: "¡Hola! Hay algo acá"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:bcjazmin7@gmail.com"
