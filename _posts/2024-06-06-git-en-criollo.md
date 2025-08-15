@@ -6,10 +6,11 @@ lang: es
 categories:
   - Principiante
 tags:
-  - Tutoriales Herramientas
+  - Tutoriales
+  - Herramientas
   - Git
   - GitHub
-  - Control de Versiones
+  - Versionado
   - Colaboración
   - Jekyll
 toc: true

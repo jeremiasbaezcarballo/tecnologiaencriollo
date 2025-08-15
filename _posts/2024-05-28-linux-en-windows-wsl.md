@@ -5,11 +5,11 @@ categories:
   - Conocedor
 lang: es
 tags:
-  - Tutoriales Herramientas
-  - principiantes
-  - windows
-  - ambiente de desarrollo
-  - wsl
+  - Tutoriales
+  - Principiante
+  - Windows
+  - Desarrollo
+  - WSL
 ---
 
 # Desarrollo en Linux dentro de Windows apto principiantes: WSL

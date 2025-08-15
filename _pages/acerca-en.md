@@ -1,5 +1,5 @@
 ---
-permalink: /acerca/
+permalink: /en/acerca/
 title: "Acerca de TEC"
 lang: en
 page_id: about
